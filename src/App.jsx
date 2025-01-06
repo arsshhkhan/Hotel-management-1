@@ -1,4 +1,6 @@
+import AddGuestForm from './pages/AddGuestForm';
 import BookingForm from './pages/BookingForm';
+import NewStaffForm from './pages/NewStaffForm';
 
 
 function App() {
@@ -6,7 +8,9 @@ function App() {
 
   return (
     <>
-    <BookingForm />;
+    {/* <BookingForm />;
+    <NewStaffForm/> */}
+    <AddGuestForm/>
     </>
   )
 }

@@ -10,18 +10,14 @@ const BookingForm = () => {
       <div className="max-w-6xl mx-auto bg-white p-8 rounded-lg shadow-md">
         <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold leading-4">
-  New <span className="border-b-4 border-red-800">Booking</span>
-</h1>
-
-
-
+               New <span className="border-b-4 border-red-800">Booking</span> </h1>
 
           <div className="flex gap-4">
             <button className="border border-gray-300 px-4 py-2 rounded-md hover:bg-gray-100">
               NEW
             </button>
             <button
-              onClick={handleSave} // Add this onClick handler
+              onClick={handleSave} 
               className="bg-red-800 text-white px-4 py-2 rounded-md hover:bg-gray-400"
             >
               Save
@@ -30,7 +26,7 @@ const BookingForm = () => {
         </div>
 
         <div className="grid grid-cols-3 gap-6">
-          {/* About Booking */}
+
           <div>
             <h2 className="text-lg font-semibold mb-4">About Booking</h2>
             <div className="space-y-4">
@@ -102,7 +98,6 @@ const BookingForm = () => {
             </div>
           </div>
 
-          {/* About Client */}
           <div>
             <h2 className="text-lg font-semibold mb-4">About Client</h2>
             <div className="space-y-4">
@@ -156,7 +151,6 @@ const BookingForm = () => {
             </div>
           </div>
 
-          {/* About Balance */}
           <div>
             <h2 className="text-lg font-semibold mb-4">About Balance</h2>
             <div className="space-y-4">
