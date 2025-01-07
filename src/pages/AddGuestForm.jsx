@@ -3,7 +3,29 @@ import React from "react";
 const AddGuestForm = () => {
   return (
     <div className="bg-slate-200 min-h-screen flex items-center justify-center px-4">
-      <div className="max-w-3xl w-full bg-white shadow-2xl rounded-3xl p-8">
+      <div className="max-w-3xl w-full bg-white shadow-2xl rounded-3xl p-8 relative">
+        {/* Cancel Icon Button */}
+        <button
+          className="absolute top-4 right-4 p-2 bg-gray-200 hover:bg-gray-300 transition"
+          onClick={() => console.log("Cancel clicked")}
+          aria-label="Cancel"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6 text-gray-800"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
         {/* Form Heading */}
         <h1 className="text-4xl font-bold text-gray-800 mb-6 text-left border-b pb-4 border-gray-300">
           Add <span className="text-red-800">New</span> Guest
@@ -78,7 +100,7 @@ const AddGuestForm = () => {
             </div>
           </div>
           {/* Submit Button */}
-          <div className="text-center">
+          <div className="text-left">
             <button
               type="submit"
               className="px-6 py-3 rounded-xl bg-gray-600 text-white font-medium hover:bg-red-800 transition shadow-lg"
