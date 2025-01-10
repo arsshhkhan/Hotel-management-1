@@ -44,17 +44,7 @@ class Donut extends Component {
           />
         </div>
 
-        {/* Line Chart */}
-        <div className="line-chart">
-          <h2>Line Chart</h2>
-          <Chart
-            options={this.state.lineOptions}
-            series={this.state.lineSeries}
-            type="line"
-            width="500"
-          />
-        </div>
-      </div>
+       </div>
       
     );
   }

@@ -1,7 +1,7 @@
-import Donut from './components/Charts';
-import AddGuestForm from './pages/AddGuestForm';
-import BookingForm from './pages/BookingForm';
-import NewStaffForm from './pages/NewStaffForm';
+import Dashboard from './components/Dashboard';
+import React from 'react';
+import StatsCard from './components/Statscard';
+
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-   <Donut/>
+   <Dashboard/>
     </>
   )
 }
